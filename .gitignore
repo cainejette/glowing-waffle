@@ -1,0 +1,9 @@
+secrets.yaml
+tts
+._.DS_Store
+.HA_VERSION
+.uuid
+.wink.conf
+*.db
+*.log
+.cloud
