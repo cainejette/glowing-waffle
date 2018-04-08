@@ -1,1 +1,43 @@
-[]
+- alias: turn water off at night!
+  action:
+  - service: switch.turn_off
+    data:
+      entity_id: switch.the_water
+  trigger:
+  - at: '23:30'
+    platform: time
+  condition: []
+  id: '1523226686174'
+
+- alias: turn water on in the morning
+  action:
+  - service: switch.turn_on
+    data:
+      entity_id: switch.the_water
+  trigger:
+  - at: '6:00'
+    platform: time
+  condition: []
+  id: '1523227102104'
+
+- alias: turn water off during the day
+  action:
+  - service: switch.turn_off
+    data:
+      entity_id: switch.the_water
+  trigger:
+  - at: '10:00'
+    platform: time
+  condition: []
+  id: '1523227306162'
+
+- alias: turn water on in the evening
+  action:
+  - service: switch.turn_on
+    data:
+      entity_id: switch.the_water
+  trigger:
+  - at: '18:00'
+    platform: time
+  condition: []
+  id: '1523227358668'
